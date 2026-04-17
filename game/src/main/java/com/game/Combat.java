@@ -1,11 +1,12 @@
 package com.game;
 
 public class Combat {
+    public int attack(int attacker, int target) {
+        int damage = (target - attacker);
+        return damage;
+    }
 
 }
 
-// doesnt work cause attacker/target need a type (ex. Player attacker, Enenmy target)
-public void attack(attacker, target) {
 
-
-}
+ 
