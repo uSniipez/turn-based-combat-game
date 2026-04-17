@@ -10,23 +10,13 @@ public class Main {
         Player player = new Player();
         Grimbane grimbane = new Grimbane();
         Combat combat = new Combat();
+        GameEngine gameEngine = new GameEngine();
         
-
         ui.consoleUI();
-       /*
-        String userInput = scanner.nextLine();
-        if (userInput.equals("1")) {
-            grimbane.grimbaneHP = combat.attack(player.playerAttackDamage, grimbane.grimbaneHP);
-            System.out.println("You attack Grimbane for 10 damage.");
+        gameEngine.chooseAction();
 
-            player.playerHP = combat.attack(grimbane.grimbaneAttackDamage, player.playerHP);
-            System.out.println("Grimbane attacks for 5 damage.");
 
-            System.out.println(grimbane.grimbaneHP);
-            System.out.println(player.playerHP);
-        }
-        */
-    
+        /* 
         System.out.println(player.playerHP + " before test");
         player.takeDamage(20);
         System.out.println(player.playerHP + " after test");
@@ -34,6 +24,6 @@ public class Main {
         System.out.println(grimbane.grimbaneHP + " before test");
         grimbane.takeDamage(player.playerAttackDamage);
         System.out.println(grimbane.grimbaneHP + " after test");
-
+        */
     }
 }

@@ -14,14 +14,18 @@ public class ConsoleUI {
     }
 
     public void consoleUI() {
-        System.out.println("-Turn Based Fighting Game-" + "\n");
-        System.out.println("Level One 'Grimbane'");
+        System.out.println("\n");
+        System.out.println("[-Turn Based Fighting Game-]");
+        System.out.println("Level One 'Grimbane'" + "\n");
+
+        System.out.println("Grimbane");
         System.out.println("HP: " + grimbane.getGrimbaneHP() + " | Shield: " + grimbane.getGrimbaneShield());
-        System.out.println("Grimbane is attacking for " + grimbane.getGrimbaneAttackDamage() + "\n");
+        System.out.println("Grimbane is attacking for " + grimbane.getGrimbaneAttackDamage() + " this turn" + "\n");
 
         System.out.println("Choose an action:");
         System.out.println("(1). Attack for " + player.getPlayerAttackDamage());
         System.out.println("(2). Defend for " + player.getPlayerDefend());
+        
 
     }
 }
