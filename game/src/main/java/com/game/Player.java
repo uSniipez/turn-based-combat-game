@@ -1,8 +1,8 @@
 package com.game;
 
 public class Player {
-    int playerHP = 50;
-    int playerShield = 10;
+    public int playerHP = 50;
+    int playerShield = 0;
     int playerAttackDamage = 10;
     int playerDefend = 8;
 
@@ -25,9 +25,12 @@ public class Player {
             System.out.println("Game Over: You died");
             System.exit(0);
         }
-            
-        playerHP = (playerHP - damage);
-        System.out.println(playerHP);    
+        
+        if (damage > 0) {
+            playerHP = (playerHP - damage);
+            System.out.println(playerHP);
+        }
+           
     }
     
     public void defend () {

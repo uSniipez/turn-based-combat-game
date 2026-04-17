@@ -1,6 +1,10 @@
 package com.game.enemies;
+import com.game.Player;
 
 public class Grimbane {
+    Player player = new Player();
+
+    final String grimbaneName = "Grimbane";
     public int grimbaneHP = 50;
     public int grimbaneShield = 0;
     public int grimbaneAttackDamage = 5;
@@ -31,9 +35,63 @@ public class Grimbane {
         grimbaneHP = (grimbaneHP - damage);
         System.out.println(grimbaneHP);    
     }
-
+    
     public void defend () {
         grimbaneShield = (grimbaneShield + grimbaneDefend);
     }
 
+    public void randomTurn() {
+        double i = Math.random();
+        System.out.println("NUMBER GENERATED" + i);
+        if (i < 0.5) {
+            defend();
+            System.out.println("TEST: " + grimbaneShield);
+            System.out.println("Grimbane is blocking for " + grimbaneDefend);
+        }else{
+            player.takeDamage(grimbaneAttackDamage);
+            System.out.println("Grimbane is attacking for " + grimbaneAttackDamage);
+            System.out.println("TEST: " + player.playerHP);
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+        
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+

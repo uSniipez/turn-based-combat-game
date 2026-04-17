@@ -12,18 +12,8 @@ public class Main {
         Combat combat = new Combat();
         GameEngine gameEngine = new GameEngine();
         
+        System.out.println(Math.random());
         ui.consoleUI();
-        gameEngine.chooseAction();
-
-
-        /* 
-        System.out.println(player.playerHP + " before test");
-        player.takeDamage(20);
-        System.out.println(player.playerHP + " after test");
-
-        System.out.println(grimbane.grimbaneHP + " before test");
-        grimbane.takeDamage(player.playerAttackDamage);
-        System.out.println(grimbane.grimbaneHP + " after test");
-        */
+        gameEngine.startGame();
     }
 }
