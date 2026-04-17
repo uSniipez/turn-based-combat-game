@@ -4,14 +4,14 @@ public class Grimbane {
     public int grimbaneHP = 50;
     public int grimbaneShield = 0;
     public int grimbaneAttackDamage = 5;
-    public int grimbaneDefense = 7;
+    public int grimbaneDefend = 7;
 
 
     // for later use (min/max hp, damage uses shield first, etc)
     public int getGrimbaneHP() {return grimbaneHP;}
     public int getGrimbaneShield() {return grimbaneShield;}
     public int getGrimbaneAttackDamage() {return grimbaneAttackDamage;}
-    public int getGrimbaneDefense() {return grimbaneDefense;}
+    public int getGrimbaneDefend() {return grimbaneDefend;}
 
 
     public void takeDamage(int damageSource) {
@@ -30,6 +30,10 @@ public class Grimbane {
             
         grimbaneHP = (grimbaneHP - damage);
         System.out.println(grimbaneHP);    
+    }
+
+    public void defend () {
+        grimbaneShield = (grimbaneShield + grimbaneDefend);
     }
 
 }
