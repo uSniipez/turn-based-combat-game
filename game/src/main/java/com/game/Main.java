@@ -13,7 +13,7 @@ public class Main {
         
 
         ui.consoleUI();
-       
+       /*
         String userInput = scanner.nextLine();
         if (userInput.equals("1")) {
             grimbane.grimbaneHP = combat.attack(player.playerAttackDamage, grimbane.grimbaneHP);
@@ -21,10 +21,19 @@ public class Main {
 
             player.playerHP = combat.attack(grimbane.grimbaneAttackDamage, player.playerHP);
             System.out.println("Grimbane attacks for 5 damage.");
-            
+
             System.out.println(grimbane.grimbaneHP);
             System.out.println(player.playerHP);
         }
+        */
+    
+        System.out.println(player.playerHP + " before test");
+        player.takeDamage(20);
+        System.out.println(player.playerHP + " after test");
+
+        System.out.println(grimbane.grimbaneHP + " before test");
+        grimbane.takeDamage(player.playerAttackDamage);
+        System.out.println(grimbane.grimbaneHP + " after test");
 
     }
 }

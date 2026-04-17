@@ -21,7 +21,7 @@ public class ConsoleUI {
 
         System.out.println("Choose an action:");
         System.out.println("(1). Attack for " + player.getPlayerAttackDamage());
-        System.out.println("(2). Defend for " + player.getPlayerDefense());
+        System.out.println("(2). Defend for " + player.getPlayerDefend());
 
     }
 }

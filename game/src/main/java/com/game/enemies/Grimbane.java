@@ -13,4 +13,23 @@ public class Grimbane {
     public int getGrimbaneAttackDamage() {return grimbaneAttackDamage;}
     public int getGrimbaneDefense() {return grimbaneDefense;}
 
+
+    public void takeDamage(int damageSource) {
+        int damage = damageSource;
+
+        if (grimbaneShield > 0) { 
+            damage = (damage - grimbaneShield);
+            grimbaneShield = (grimbaneShield - damageSource);
+            if (grimbaneShield < 0) {grimbaneShield = 0;}
+        }
+        
+        if (grimbaneHP - damage <= 0) {
+            System.out.println("Game Over: You died");
+            System.exit(0);
+        }
+            
+        grimbaneHP = (grimbaneHP - damage);
+        System.out.println(grimbaneHP);    
+    }
+
 }
