@@ -15,8 +15,11 @@ public class Grimbane {
     public int getGrimbaneShield() {return grimbaneShield;}
     public int getGrimbaneAttackDamage() {return grimbaneAttackDamage;}
     public int getGrimbaneDefend() {return grimbaneDefend;}
-
-
+    public void setGrimbaneHP(int grimbaneHP) {this.grimbaneHP = grimbaneHP;}
+    public void setGrimbaneShield(int grimbaneShield) {this.grimbaneShield = grimbaneShield;}
+    public void setGrimbaneAttackDamage(int grimbaneAttackDamage) {this.grimbaneAttackDamage = grimbaneAttackDamage;}
+    public void setGrimbaneDefend(int grimbaneDefend) {this.grimbaneDefend = grimbaneDefend;}
+    
     public void takeDamage(int damageSource) {
         int damage = damageSource;
 

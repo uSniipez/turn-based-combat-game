@@ -11,7 +11,13 @@ public class Player {
     public int getPlayerShield() {return playerShield;}
     public int getPlayerAttackDamage() {return playerAttackDamage;}
     public int getPlayerDefend() {return playerDefend;}
+    public void setPlayerHP(int playerHP) {this.playerHP = playerHP;}
+    public void setPlayerShield(int playerShield) {this.playerShield = playerShield;}
+    public void setPlayerAttackDamage(int playerAttackDamage) {this.playerAttackDamage = playerAttackDamage;}
+    public void setPlayerDefend(int playerDefend) {this.playerDefend = playerDefend;}
+    
 
+    //TODO Somehow it is possible for player to gain health
     public void takeDamage(int damageSource) {
         int damage = damageSource;
 
@@ -33,7 +39,8 @@ public class Player {
         }
         */
        
-        playerHP = (playerHP - damage);   
+        //playerHP = (playerHP - damage);  
+        setPlayerHP(playerHP - damage); 
     }
     
     public void defend () {

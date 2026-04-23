@@ -39,6 +39,8 @@ public class GameEngine {
         } else{
             System.out.println("Invalid input, try again!" + "\n");
         }
+
+        ++turnCounter;
   
     }
 }
